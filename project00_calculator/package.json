@@ -1,9 +1,12 @@
 {
-  "name": "project00_calculator",
+  "name": "@osamaaidev/calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "calculator": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

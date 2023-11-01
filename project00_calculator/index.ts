@@ -1,3 +1,4 @@
+#! /usr/bin/env node 
 import inquirer from "inquirer";
 
 const userInput: {
@@ -27,7 +28,7 @@ const userInput: {
 const {firstNumber, secondNumber, operator} = userInput;
 let result: number = 0;
 
-if(!isNaN(firstNumber) && isNaN(secondNumber)){
+if(!isNaN(firstNumber) && !isNaN(secondNumber)){
 switch(operator){
     case "+":
       result = firstNumber + secondNumber;
